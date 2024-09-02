@@ -1,0 +1,64 @@
+/* src/components/Navbar.css */
+
+.navbar {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 10px 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.navbar.transparent {
+  background: rgba(255, 255, 255, 0); /* Transparent background */
+}
+.navbar.transparent a {
+  color: aliceblue;
+}
+
+.navbar-container {
+  max-width: 1200px; /* Adjust as needed */
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.navbar-brand img {
+  width: 70px;
+  height: 70px;
+}
+
+.navbar-links {
+  list-style: none;
+  display: flex;
+  margin: 0;
+}
+
+.navbar-links li {
+  margin-left: 20px;
+  padding: 5px 10px; /* Add padding for better visual effect */
+  transition: box-shadow 0.3s ease; /* Smooth transition */
+  border-radius: 8px; /* Rounded corners */
+}
+
+.navbar-links li:hover {
+  background-color: rgba(0, 83, 122, 1);
+  box-shadow: 0 4px 8px rgba(0, 83, 122, 1);
+  /* Box shadow on hover */
+}
+
+.navbar-links a {
+  text-decoration: none;
+  color: #333; /* Default text color */
+  font-weight: bold;
+  transition: color 0.3s ease; /* Smooth transition for color */
+}
+
+.navbar-links a:hover {
+  color: aliceblue; /* Ensure text color remains unchanged on hover */
+}
